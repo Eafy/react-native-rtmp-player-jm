@@ -1,0 +1,5 @@
+rootProject.name = 'example'
+include ':RNJimiRTMPPlayer'
+project(':RNJimiRTMPPlayer').projectDir = new File(rootProject.projectDir, '../node_modules/RNJimiRTMPPlayer/android')
+
+include ':app'

@@ -1,0 +1,6 @@
+framework module JimiVideoPlayer {
+  umbrella header "JimiVideoPlayer.h"
+
+  export *
+  module * { export * }
+}

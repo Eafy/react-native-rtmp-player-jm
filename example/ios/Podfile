@@ -1,0 +1,31 @@
+platform :ios, '9.0'
+
+target 'example' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for example
+
+  pod 'React', :path => '../node_modules/react-native', :subspecs => [
+    'Core',
+    'CxxBridge',
+    'DevSupport', 
+    'RCTText',
+    'RCTNetwork',
+    'RCTWebSocket', 
+    'RCTAnimation'
+  ]
+  pod 'yoga', :path => '../node_modules/react-native/ReactCommon/yoga'
+  pod 'DoubleConversion', :podspec => '../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec'
+  pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
+  pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
+
+  pod 'RNJimiRTMPPlayer', :podspec => '../node_modules/RNJimiRTMPPlayer/RNJimiRTMPPlayer.podspec'
+
+  target 'example-tvOSTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
+

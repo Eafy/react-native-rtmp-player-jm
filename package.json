@@ -1,0 +1,30 @@
+{
+  "name": "react-native-rtmp-player-jm",
+  "version": "0.0.1",
+  "description": "Jimi Video Player for RTMP SDK modules and view for React Native(Android & IOS), support react native 0.57+. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Eafy/react-native-rtmp-player-jm.git"
+  },
+  "keywords": [
+    "JimiVideoPlayer",
+    "JimiRTMPPlayer",
+    "RNJimiRTMPPlayer",
+    "React Native",
+    "react-native-rtmp-player-jm"
+  ],
+  "author": "Eafy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Eafy/react-native-rtmp-player-jm/issues"
+  },
+  "homepage": "https://github.com/Eafy/react-native-rtmp-player-jm#readme",
+  "devDependencies": {
+    "react": "16.6.3",
+    "react-native": "^0.57.5"
+  }
+}
