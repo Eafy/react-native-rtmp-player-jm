@@ -12,6 +12,8 @@
 		0C16950A2314C2AA00085C6D /* JMRTMPPlayerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C1695082314C2AA00085C6D /* JMRTMPPlayerManager.m */; };
 		0C16954E2315077100085C6D /* JMRTMPMonitorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C16954C2315077100085C6D /* JMRTMPMonitorManager.m */; };
 		0C16954F2315077100085C6D /* JMRTMPMonitorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C16954D2315077100085C6D /* JMRTMPMonitorManager.h */; };
+		0C30C25C2334778F009630F6 /* JMRTMPJSConstant.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C30C25A2334778F009630F6 /* JMRTMPJSConstant.h */; };
+		0C30C25D2334778F009630F6 /* JMRTMPJSConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C30C25B2334778F009630F6 /* JMRTMPJSConstant.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,8 @@
 		0C1695082314C2AA00085C6D /* JMRTMPPlayerManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JMRTMPPlayerManager.m; sourceTree = "<group>"; };
 		0C16954C2315077100085C6D /* JMRTMPMonitorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMRTMPMonitorManager.m; sourceTree = "<group>"; };
 		0C16954D2315077100085C6D /* JMRTMPMonitorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMRTMPMonitorManager.h; sourceTree = "<group>"; };
+		0C30C25A2334778F009630F6 /* JMRTMPJSConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMRTMPJSConstant.h; sourceTree = "<group>"; };
+		0C30C25B2334778F009630F6 /* JMRTMPJSConstant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMRTMPJSConstant.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 				0C1695082314C2AA00085C6D /* JMRTMPPlayerManager.m */,
 				0C16954D2315077100085C6D /* JMRTMPMonitorManager.h */,
 				0C16954C2315077100085C6D /* JMRTMPMonitorManager.m */,
+				0C30C25A2334778F009630F6 /* JMRTMPJSConstant.h */,
+				0C30C25B2334778F009630F6 /* JMRTMPJSConstant.m */,
 			);
 			path = RNJimiRTMPPlayer;
 			sourceTree = "<group>";
@@ -71,6 +77,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C1695092314C2AA00085C6D /* JMRTMPPlayerManager.h in Headers */,
+				0C30C25C2334778F009630F6 /* JMRTMPJSConstant.h in Headers */,
 				0C16954F2315077100085C6D /* JMRTMPMonitorManager.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -144,6 +151,7 @@
 			files = (
 				0C16954E2315077100085C6D /* JMRTMPMonitorManager.m in Sources */,
 				0C16950A2314C2AA00085C6D /* JMRTMPPlayerManager.m in Sources */,
+				0C30C25D2334778F009630F6 /* JMRTMPJSConstant.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

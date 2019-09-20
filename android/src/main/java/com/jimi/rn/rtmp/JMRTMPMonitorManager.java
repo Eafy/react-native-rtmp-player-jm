@@ -30,7 +30,7 @@ import com.facebook.react.uimanager.annotations.ReactProp;
 import com.jimi.jimivideoplayer.opengl.GLMonitor;
 
 public class JMRTMPMonitorManager extends SimpleViewManager<GLMonitor> {
-    public static GLMonitor glMonitor;
+    private static GLMonitor glMonitor;
     public static boolean isResume = false;
     private DataSource<CloseableReference<CloseableImage>> dataSource;
     private DraweeHolder<?> imageHolder;
@@ -38,6 +38,14 @@ public class JMRTMPMonitorManager extends SimpleViewManager<GLMonitor> {
     @Override
     public String getName() {
         return "JMRTMPMonitor";
+    }
+
+    public static GLMonitor getGLMonitor(){
+        return glMonitor;
+    }
+
+    public static void removeGLMonitor() {
+        glMonitor = null;
     }
 
     @Override

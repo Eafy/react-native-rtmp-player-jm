@@ -270,6 +270,15 @@ typedef enum : NSUInteger {
  */
 - (void)switchCamera:(BOOL)isFront autoPlay:(BOOL)bAuto handler:(JMSwitchCameraHandler _Nullable)handler;
 
+/**
+ 切换分辨率(暂时无效)
+
+ @param quality 视频质量(0：标清，1:高清)
+ @param bAuto 是否自动播放
+ @param handler 切换之后的回调
+ */
+- (void)switchResolution:(NSInteger)quality autoPlay:(BOOL)bAuto handler:(JMSwitchCameraHandler _Nullable)handler;
+
 #pragma mark - 截图及视频录制
 
 /**
@@ -312,6 +321,13 @@ typedef enum : NSUInteger {
  @return 时长(毫秒)，0：未在进行视频录制或时长是0，其他为已录制的视频时长
  */
 - (long)getRecordingRuration;
+
+/**
+ 是否开启音频降噪功能及级别
+
+ @param level 级别：0~3，0表示关闭，默认3
+ */
+- (void)setDenoiseLevel:(int)level;
 
 #pragma mark - 高级接口
 

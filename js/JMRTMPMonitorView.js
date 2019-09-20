@@ -27,7 +27,7 @@ export default class RNJMRTMPMonitorView extends Component {
     }
     
     return <JMRTMPMonitorView {...this.props} onChange={this._onChange.bind(this)}
-      style={{backgroundColor:'black',...this.props.style}}
+      style={Platform.OS === 'ios' ? {backgroundColor:'black',...this.props.style} : {...this.props.style, backgroundColor:'#FF000000'}}
       image={image} />;
   }
 }
