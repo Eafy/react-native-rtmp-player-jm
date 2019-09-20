@@ -121,4 +121,4 @@ Podfile 增加
 | undefine | YES | undefine | null | 回复内容有设备端决定，一般是json字符串或字符串
 
 #### Demo示例
-[https://gitlab.com/Eafy/react-native-rtmp-player-jm/tree/master/example/App.js](example/App.js)
+[https://github.com//Eafy/react-native-rtmp-player-jm/tree/master/example/App.js](example/App.js)
