@@ -85,8 +85,8 @@ Podfile 增加
 | Promise videoSize() | Promise | {"width": 0, "hieght": 0} | 获取视频宽高，只有视频开始且显示画面之后才有效
 
 #### JMRTMPPlayerManager Listener:- kOnStreamPlayerPlayStatus
-| Field                    | Must Exist  | Type | Value | Description
-| -------------------------| -------  | ------- | -------  | ------ | -------
+| Field                    | Must Exist | Type | Value | Description
+| ----------------------- | ------- | ------- | ------ | -------
 | status | YES | int | 1~14, "videoStatusPrepare": 正在准备播放; "videoStatusStart": 正在播放; "videoStatusStop": 停止播放；"videoStatusErrURLGet": 获取URL失败；"videoStatusErrURLInvalid": URL无效；"videoStatusErrOpenFail": 打开URL失败；"videoStatusErrOpenTimeout": 打开URL超时；"videoStatusErrPlayAbnormal": 播放异常或设备停止推流(会自动停止播放器)；"videoStatusErrHttpTimeout": http请求超时；"videoStatusErrHttpHost": 域名或IP错误；"videoStatusErrHttpParameter": http参数错误；"videoStatusErrServerData": 服务器数据解析异常；"videoStatusErrDeviceReplayFail": 设备回复“失败”；"videoStatusErrNetworkAnomaly": /网络异常；| 播放状态
 | errCode | NO | int | >= videoStatusStop，或其他服务器返回错误码| 播放错误码
 | errMsg | NO | int | 错误提示语 | 错误提示语，仅当 status===videoStatusErrURLGet时才有
