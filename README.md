@@ -74,8 +74,8 @@ Podfile 增加
 | stopTalk() | kOnStreamPlayerTalkStatus | 见回调说明 | 停止对讲
 | stop() | null | null | 停止内部所有功能（播放、对讲，网络请求）
 | Promise switchCamera(bool isFront, bool bAuto, resolver, rejecter) | Promise | bAuto，默认请填true，成功返回url，否则错误码及错误信息，比如：{ [Error: 设备不在线] code: '228'} | 切换摄像头
-| Promise snapshot(String filePath) | Promise | 成功返回保存后的图片路径，否则错误码及错误信息，比如：{ [Error: Failed to do snapshot] code: '-1'} | 视频截图，filePath：需要保存图片的绝对路径
-| startRecording(String filePath) | kOnStreamPlayerRecordStatus | 见回调说明 | 视频录制，filePath：需要保存视频的绝对路径(iOS默认只录制在沙盒)
+| Promise snapshot(String filePath) | Promise | 成功返回保存后的图片路径，否则错误码及错误信息，比如：{ [Error: Failed to do snapshot] code: '-1'} | 视频截图，filePath：需要保存图片的绝对路径，必须以".png"结尾，code:-1，截图失败，-2:保存图片失败，-3:格式无效
+| startRecording(String filePath) | kOnStreamPlayerRecordStatus | 见回调说明 | mp4视频录制，filePath：需要保存视频的绝对路径(iOS默认只录制在沙盒，必须以".mp4"结尾)
 | stopRecording() | kOnStreamPlayerRecordStatus | 见回调说明 | 停止视频录制
 | Promise isRecording(resolve, rejecter) | Promise | true：正在录制；false：未录制 | 视频是否在录制
 | Promise getRecordingDuration(resolve, rejecter) | Promise | 0 | 视频录制的时长(毫秒)
@@ -119,3 +119,6 @@ Podfile 增加
 | Field                    | Must Exist | Type | Value | Description
 | ----------------------- | ------- | ------- | ------ | -------
 | undefine | YES | undefine | null | 回复内容有设备端决定，一般是json字符串或字符串
+
+#### Demo示例
+[https://gitlab.com/Eafy/react-native-rtmp-player-jm/tree/master/example/App.js](example/App.js)
