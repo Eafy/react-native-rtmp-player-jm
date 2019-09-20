@@ -3,7 +3,7 @@
 
 Jimi RTMP Player SDK modules and view for React Native(Android & IOS), support react native 0.57+
 
-![示例图](https://raw.githubusercontent.com/Eafy/react-native-rtmp-player-jm/master/images/screenShot.png)
+![Sample](https://raw.githubusercontent.com/Eafy/react-native-rtmp-player-jm/master/images/screenShot.png)
 
 ### Environments 环境要求
 1.JS
