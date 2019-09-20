@@ -159,12 +159,12 @@ RCT_EXPORT_METHOD(stopRecording) {
     [gJMVideoStreamPlayer stopRecording];
 }
 
-RCT_EXPORT_METHOD(isRecording:(RCTPromiseResolveBlock)resolve) {
+RCT_EXPORT_METHOD(isRecording:(RCTPromiseResolveBlock)resolve rejecter:(RCTPromiseRejectBlock)reject) {
     BOOL isRecording = [gJMVideoStreamPlayer isRecording];
     resolve(@(isRecording));
 }
 
-RCT_EXPORT_METHOD(getRecordingDuration:(RCTPromiseResolveBlock)resolve) {
+RCT_EXPORT_METHOD(getRecordingDuration:(RCTPromiseResolveBlock)resolve rejecter:(RCTPromiseRejectBlock)reject) {
     long time = [gJMVideoStreamPlayer getRecordingRuration];
     resolve(@(time));
 }
@@ -187,13 +187,13 @@ RCT_EXPORT_METHOD(setMute:(BOOL)mute) {
    gJMVideoStreamPlayer.mute = mute;
 }
 
-RCT_EXPORT_METHOD(getMute:(RCTPromiseResolveBlock)resolve) {
+RCT_EXPORT_METHOD(getMute:(RCTPromiseResolveBlock)resolve rejecter:(RCTPromiseRejectBlock)reject) {
     resolve(@(gJMVideoStreamPlayer ? gJMVideoStreamPlayer.mute : NO));
 }
 
-RCT_EXPORT_METHOD(videoSize:(RCTPromiseResolveBlock)resolve) {
+RCT_EXPORT_METHOD(videoSize:(RCTPromiseResolveBlock)resolve rejecter:(RCTPromiseRejectBlock)reject) {
     NSDictionary *dic = @{@"width": @(gJMVideoStreamPlayer.videoWidth),
-                          @"hight": @(gJMVideoStreamPlayer.videoHeight)};
+                          @"hieght": @(gJMVideoStreamPlayer.videoHeight)};
     resolve(dic);
 }
 

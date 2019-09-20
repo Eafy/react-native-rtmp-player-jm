@@ -3,6 +3,7 @@ package com.rn;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import com.jimi.rn.rtmp.JMRTMPPlayerPackage ;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
 import com.facebook.react.shell.MainReactPackage;
