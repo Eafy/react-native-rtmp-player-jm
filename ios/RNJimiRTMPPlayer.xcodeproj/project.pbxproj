@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0C1695052314C03A00085C6D /* JimiVideoPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C1695042314C03A00085C6D /* JimiVideoPlayer.framework */; };
 		0C1695092314C2AA00085C6D /* JMRTMPPlayerManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C1695072314C2AA00085C6D /* JMRTMPPlayerManager.h */; };
 		0C16950A2314C2AA00085C6D /* JMRTMPPlayerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C1695082314C2AA00085C6D /* JMRTMPPlayerManager.m */; };
 		0C16954E2315077100085C6D /* JMRTMPMonitorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C16954C2315077100085C6D /* JMRTMPMonitorManager.m */; };
@@ -18,7 +17,6 @@
 
 /* Begin PBXFileReference section */
 		0C1694F92314BFC300085C6D /* RNJimiRTMPPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RNJimiRTMPPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0C1695042314C03A00085C6D /* JimiVideoPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = JimiVideoPlayer.framework; sourceTree = "<group>"; };
 		0C1695072314C2AA00085C6D /* JMRTMPPlayerManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JMRTMPPlayerManager.h; sourceTree = "<group>"; };
 		0C1695082314C2AA00085C6D /* JMRTMPPlayerManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JMRTMPPlayerManager.m; sourceTree = "<group>"; };
 		0C16954C2315077100085C6D /* JMRTMPMonitorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMRTMPMonitorManager.m; sourceTree = "<group>"; };
@@ -32,7 +30,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C1695052314C03A00085C6D /* JimiVideoPlayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,7 +55,6 @@
 		0C1694FB2314BFC300085C6D /* RNJimiRTMPPlayer */ = {
 			isa = PBXGroup;
 			children = (
-				0C1695042314C03A00085C6D /* JimiVideoPlayer.framework */,
 				0C1695072314C2AA00085C6D /* JMRTMPPlayerManager.h */,
 				0C1695082314C2AA00085C6D /* JMRTMPPlayerManager.m */,
 				0C16954D2315077100085C6D /* JMRTMPMonitorManager.h */,

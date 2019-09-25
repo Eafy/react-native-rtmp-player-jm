@@ -1,6 +1,6 @@
 {
   "name": "react-native-rtmp-player-jm",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Jimi Video Player for RTMP SDK modules and view for React Native(Android & IOS), support react native 0.57+. ",
   "main": "index.js",
   "scripts": {
@@ -28,9 +28,7 @@
   },
   "dependencies": {
       "react": "16.6.3",
-      "react-native": "0.57.8",
-      "react-native-rtmp-player-jm": "^1.0.2",
-      "react-native-fs": "^2.13.3"
+      "react-native": "0.57.8"
   },
   "devDependencies": {
       "react": "16.6.3",
