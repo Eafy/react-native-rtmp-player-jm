@@ -24,6 +24,11 @@ JMVideoStreamPlayer *gJMVideoStreamPlayer = nil;
 
 RCT_EXPORT_MODULE(JMRTMPPlayerManager);
 
+- (instancetype)init
+{
+
+}
+
 - (void)startObserving {
     self.hasListeners = YES;
 }
@@ -49,6 +54,12 @@ RCT_EXPORT_MODULE(JMRTMPPlayerManager);
     }
 }
 
+- (void)didJMSmartAppEngineExit
+{
+    [self deInitialize];
+    gJMRTMPMonitor = nil;
+}
+
 #pragma mark -
 
 RCT_EXPORT_METHOD(initialize:(NSString *)key
@@ -56,6 +67,7 @@ RCT_EXPORT_METHOD(initialize:(NSString *)key
                   imei:(NSString *_Nonnull)imei) {
     if (gJMVideoStreamPlayer != nil) return;
 
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didJMSmartAppEngineExit) name:@"kJMSmartAppEngineExit" object:nil];
     gJMVideoStreamPlayer = [[JMVideoStreamPlayer alloc] initWithKey:key secret:secret imei:imei token:nil];
     gJMVideoStreamPlayer.delegate = self;
     [gJMVideoStreamPlayer attachMonitor:gJMRTMPMonitor];
@@ -63,6 +75,8 @@ RCT_EXPORT_METHOD(initialize:(NSString *)key
 
 RCT_EXPORT_METHOD(deInitialize) {
     if (gJMVideoStreamPlayer != nil) {
+        [[NSNotificationCenter defaultCenter] removeObserver:self];
+
         gJMVideoStreamPlayer.delegate = nil;
         [gJMVideoStreamPlayer deattachMonitor];
         [gJMVideoStreamPlayer stop];

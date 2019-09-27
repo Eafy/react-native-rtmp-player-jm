@@ -663,6 +663,7 @@
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				0C16953B2314C50500085C6D /* Embed Frameworks */,
 				104D1E74A8AF6CB98C6CE126 /* [CP] Embed Pods Frameworks */,
+				0CEF02DE233C49EB00F5C4EA /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -1114,6 +1115,23 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
+		0CEF02DE233C49EB00F5C4EA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#REACT_NATIVE_DIR=${SRCROOT}/../node_modules/react-native\nREACT_NATIVE_DIR=/Users/lzj/Desktop/Project/react-native-rtmp-player-jm/example/node_modules/react-native\nPATCH_FILE_PATH=${SRCROOT}/react-native-patch\necho \"REACT_NATIVE_DIR:$REACT_NATIVE_DIR\"\necho \"PATCH_FILE_PATH:$PATCH_FILE_PATH\"\n\nset -x\npatch  -p0 -N --dry-run --silent -f $REACT_NATIVE_DIR/React/Base/RCTModuleMethod.mm < $PATCH_FILE_PATH/rn_modify_module_method.patch 1>/dev/null\nif [ $? -eq 0 ]; then\npatch -p0 -f $REACT_NATIVE_DIR/React/Base/RCTModuleMethod.mm < $PATCH_FILE_PATH/rn_modify_module_method.patch\nfi\n";
+		};
 		104D1E74A8AF6CB98C6CE126 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1123,7 +1141,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-example/Pods-example-frameworks.sh",
-				"${PODS_ROOT}/react-native-rtmp-player-jm/ios/RNJimiRTMPPlayer/JimiVideoPlayer.framework",
+				"${PODS_ROOT}/JimiVideoPlayer/JimiVideoPlayer.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
