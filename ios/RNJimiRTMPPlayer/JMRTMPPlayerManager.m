@@ -24,11 +24,6 @@ JMVideoStreamPlayer *gJMVideoStreamPlayer = nil;
 
 RCT_EXPORT_MODULE(JMRTMPPlayerManager);
 
-- (instancetype)init
-{
-
-}
-
 - (void)startObserving {
     self.hasListeners = YES;
 }
