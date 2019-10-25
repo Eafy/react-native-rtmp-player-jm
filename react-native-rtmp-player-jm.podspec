@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "react-native-rtmp-player-jm"
-  s.version      = "1.0.7"
+  s.version      = "1.0.9"
   s.summary      = "Jimi RTMP Video Player SDK for React Native"
 
   s.description  = <<-DESC
@@ -21,5 +21,5 @@ Pod::Spec.new do |s|
   s.libraries = "c++"
 
   s.dependency 'React'
-  s.dependency 'JimiVideoPlayer', '~> 1.3.7.4'
+  s.dependency 'JimiVideoPlayer'
 end
