@@ -23,10 +23,11 @@ RCT_CUSTOM_VIEW_PROPERTY(image, NSDictionary, Monitor) {
     }
 }
 
-- (UIView *)view
+- (UIImageView *)view
 {
     if (gJMRTMPMonitor == nil) {
         gJMRTMPMonitor = [[Monitor alloc] init];
+        gJMRTMPMonitor.contentMode = UIViewContentModeScaleAspectFit;
     }
 
     return gJMRTMPMonitor;

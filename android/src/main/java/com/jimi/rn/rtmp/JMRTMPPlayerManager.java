@@ -387,6 +387,7 @@ public class JMRTMPPlayerManager extends ReactContextBaseJavaModule {
             event.putInt("audioBPS", frameInfo.audioBps);
             event.putInt("timestamp", (int)frameInfo.timestamp);
             event.putInt("totalFrameCount", frameInfo.totalFrameCount);
+            event.putInt("onlineCount", frameInfo.onlineCount);
             mContext.getJSModule(DeviceEventManagerModule.RCTDeviceEventEmitter.class)
                     .emit(kOnStreamPlayerReceiveFrameInfo, event);
         }

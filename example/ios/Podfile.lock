@@ -1,0 +1,106 @@
+PODS:
+  - boost-for-react-native (1.63.0)
+  - DoubleConversion (1.1.6)
+  - Folly (2018.10.22.00):
+    - boost-for-react-native
+    - DoubleConversion
+    - glog
+  - glog (0.3.5)
+  - JimiVideoPlayer (1.4.0)
+  - React (0.58.6):
+    - React/Core (= 0.58.6)
+  - react-native-rtmp-player-jm (1.0.5):
+    - JimiVideoPlayer (= 1.4.0)
+    - React
+  - React/Core (0.58.6):
+    - yoga (= 0.58.6.React)
+  - React/CxxBridge (0.58.6):
+    - Folly (= 2018.10.22.00)
+    - React/Core
+    - React/cxxreact
+    - React/jsiexecutor
+  - React/cxxreact (0.58.6):
+    - boost-for-react-native (= 1.63.0)
+    - Folly (= 2018.10.22.00)
+    - React/jsinspector
+  - React/DevSupport (0.58.6):
+    - React/Core
+    - React/RCTWebSocket
+  - React/fishhook (0.58.6)
+  - React/jsi (0.58.6):
+    - Folly (= 2018.10.22.00)
+  - React/jsiexecutor (0.58.6):
+    - Folly (= 2018.10.22.00)
+    - React/cxxreact
+    - React/jsi
+  - React/jsinspector (0.58.6)
+  - React/RCTAnimation (0.58.6):
+    - React/Core
+  - React/RCTBlob (0.58.6):
+    - React/Core
+  - React/RCTImage (0.58.6):
+    - React/Core
+    - React/RCTNetwork
+  - React/RCTNetwork (0.58.6):
+    - React/Core
+  - React/RCTText (0.58.6):
+    - React/Core
+  - React/RCTWebSocket (0.58.6):
+    - React/Core
+    - React/fishhook
+    - React/RCTBlob
+  - RNFS (2.13.3):
+    - React
+  - yoga (0.58.6.React)
+
+DEPENDENCIES:
+  - DoubleConversion (from `../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)
+  - Folly (from `../node_modules/react-native/third-party-podspecs/Folly.podspec`)
+  - glog (from `../node_modules/react-native/third-party-podspecs/glog.podspec`)
+  - react-native-rtmp-player-jm (from `../node_modules/react-native-rtmp-player-jm/react-native-rtmp-player-jm.podspec`)
+  - React/Core (from `../node_modules/react-native`)
+  - React/CxxBridge (from `../node_modules/react-native`)
+  - React/DevSupport (from `../node_modules/react-native`)
+  - React/RCTAnimation (from `../node_modules/react-native`)
+  - React/RCTImage (from `../node_modules/react-native`)
+  - React/RCTNetwork (from `../node_modules/react-native`)
+  - React/RCTText (from `../node_modules/react-native`)
+  - React/RCTWebSocket (from `../node_modules/react-native`)
+  - RNFS (from `../node_modules/react-native-fs`)
+  - yoga (from `../node_modules/react-native/ReactCommon/yoga`)
+
+SPEC REPOS:
+  trunk:
+    - boost-for-react-native
+    - JimiVideoPlayer
+
+EXTERNAL SOURCES:
+  DoubleConversion:
+    :podspec: "../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec"
+  Folly:
+    :podspec: "../node_modules/react-native/third-party-podspecs/Folly.podspec"
+  glog:
+    :podspec: "../node_modules/react-native/third-party-podspecs/glog.podspec"
+  React:
+    :path: "../node_modules/react-native"
+  react-native-rtmp-player-jm:
+    :podspec: "../node_modules/react-native-rtmp-player-jm/react-native-rtmp-player-jm.podspec"
+  RNFS:
+    :podspec: "../node_modules/react-native-fs"
+  yoga:
+    :path: "../node_modules/react-native/ReactCommon/yoga"
+
+SPEC CHECKSUMS:
+  boost-for-react-native: 39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c
+  DoubleConversion: bb338842f62ab1d708ceb63ec3d999f0f3d98ecd
+  Folly: de497beb10f102453a1afa9edbf8cf8a251890de
+  glog: aefd1eb5dda2ab95ba0938556f34b98e2da3a60d
+  JimiVideoPlayer: 1731769101972b0e140c9238aa31939e1b2e65d8
+  React: 130b87b2d5e2baac646954282cab87be986d98fc
+  react-native-rtmp-player-jm: a227854b94b71eb12182518913a5351413f8ee28
+  RNFS: c9bbde46b0d59619f8e7b735991c60e0f73d22c1
+  yoga: 32d7ef1081951e9a35a4c72a7be797598b138a48
+
+PODFILE CHECKSUM: d3a51f5973489d00996ecef0a970b00c08d76b83
+
+COCOAPODS: 1.8.4

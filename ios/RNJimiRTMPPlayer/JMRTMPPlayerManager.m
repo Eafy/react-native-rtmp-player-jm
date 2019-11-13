@@ -255,7 +255,7 @@ RCT_EXPORT_METHOD(videoSize:(RCTPromiseResolveBlock)resolve rejecter:(RCTPromise
     [self sendEventWithName:kOnStreamPlayerRecordStatus body:body];
 }
 
-- (void)didStreamPlayerReceiveFrameInfoWithVideoWidth:(NSInteger)videoWidth videoHeight:(NSInteger)videoHeight videoBPS:(NSInteger)videoBps audioBPS:(NSInteger)audioBps timestamp:(NSUInteger)timestamp totalFrameCount:(NSInteger)totalFrameCount
+- (void)didStreamPlayerReceiveFrameInfoWithVideoWidth:(NSInteger)videoWidth videoHeight:(NSInteger)videoHeight videoBPS:(NSInteger)videoBps audioBPS:(NSInteger)audioBps timestamp:(NSUInteger)timestamp totalFrameCount:(NSInteger)totalFrameCount onlineCount:(NSInteger)onlineCount
 {
     NSMutableDictionary *body = [self getEmptyBody];
     body[@"width"] = @(videoWidth);
@@ -264,6 +264,7 @@ RCT_EXPORT_METHOD(videoSize:(RCTPromiseResolveBlock)resolve rejecter:(RCTPromise
     body[@"audioBPS"] = @(audioBps);
     body[@"timestamp"] = @(timestamp);
     body[@"totalFrameCount"] = @(totalFrameCount);
+    body[@"onlineCount"] = @(onlineCount);
 
     [self sendEventWithName:kOnStreamPlayerReceiveFrameInfo body:body];
 }

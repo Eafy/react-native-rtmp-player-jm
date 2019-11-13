@@ -9,10 +9,10 @@ target 'example' do
   pod 'React', :path => '../node_modules/react-native', :subspecs => [
     'Core',
     'CxxBridge',
-    'DevSupport', 
+    'DevSupport',
     'RCTText',
     'RCTNetwork',
-    'RCTWebSocket', 
+    'RCTWebSocket',
     'RCTAnimation',
     'RCTImage',
   ]
@@ -22,7 +22,7 @@ target 'example' do
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
 
 
-  pod 'react-native-rtmp-player-jm', :podspec => '../node_modules/react-native/react-native-rtmp-player-jm/react-native-rtmp-player-jm.podspec'
+  pod 'react-native-rtmp-player-jm', :podspec => '../node_modules/react-native-rtmp-player-jm/react-native-rtmp-player-jm.podspec'
 
   pod 'RNFS', :podspec => '../node_modules/react-native-fs'
 
@@ -33,4 +33,3 @@ target 'example' do
   end
 
 end
-

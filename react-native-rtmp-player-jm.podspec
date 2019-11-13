@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "react-native-rtmp-player-jm"
-  s.version      = "1.0.9"
+  s.version      = "1.1.0"
   s.summary      = "Jimi RTMP Video Player SDK for React Native"
 
   s.description  = <<-DESC
@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.license      = "MIT"
   s.author       = { "Eafy" => "lizhijian_21@163.com" }
   s.platform     = :ios, "8.0"
-
+  s.requires_arc = true
 
   s.source       = { :git => "https://github.com/Eafy/react-native-rtmp-player-jm.git", :tag => "#{s.version}" }
 
