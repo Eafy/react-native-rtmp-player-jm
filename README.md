@@ -114,6 +114,7 @@ Podfile 增加
 | audioBPS | YES | int | 0 | 音频每秒高度
 | timestamp | YES | int | 0 | 视频时间戳
 | totalFrameCount | YES | int | 0 | 视频每秒帧总数
+| onlineCount | YES | int | 0 | 设备端在线的人数
 
 #### JMRTMPPlayerManager Listener:- kOnStreamPlayerReceiveDeviceData
 | Field                    | Must Exist | Type | Value | Description
