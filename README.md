@@ -168,7 +168,7 @@ Podfile 增加
 #### JMRTMPPlayerManager Listener:- kOnStreamPlayerReceiveDeviceData
 | Field                    | Must Exist | Type | Value | Description
 | ----------------------- | ------- | ------- | ------ | -------
-| undefine | YES | undefine | null | 回复内容有设备端决定，一般是json字符串或字符串
+| undefine | YES | undefine | null | 回复内容由设备端决定，一般是json字符串或字符串
 
 #### Code:- DeviceData
 | Code                    | Description
