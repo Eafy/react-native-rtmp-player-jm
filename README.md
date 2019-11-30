@@ -91,6 +91,25 @@ Podfile 增加
 | errCode | NO | int | > videoStatusStop，或其他服务器返回错误码| 播放错误码
 | errMsg | NO | int | 错误提示语 | 错误提示语，仅当 status===videoStatusErrURLGet 时才有
 
+#### Code:- PlayStatus
+| Code                    | Description
+| ----------------------- | -------
+| 0 | 未启动或未识别的状态
+| 1 | 正在准备播放
+| 2 | 开始或正在播放
+| 3 | 播放结束
+| 4 | 获取URL失败
+| 5 | URL无效
+| 6 | 打开URL失败
+| 7 | 打开URL超时
+| 8 | 播放异常或设备停止推流(会自动停止播放器)
+| 9 | http请求超时
+| 10 | 域名或IP错误
+| 11 | http参数错误
+| 12 | 服务器数据解析异常
+| 13 | 设备回复“失败”及拒绝响应
+| 14 | 网络异常
+
 #### JMRTMPPlayerManager Listener:- kOnStreamPlayerTalkStatus
 | Field                    | Must Exist | Type | Value | Description
 | ----------------------- | ------- | ------- | ------ | -------
@@ -98,12 +117,42 @@ Podfile 增加
 | errCode | NO | int | > talkStatusStop，或其他服务器返回错误码| 播放错误码
 | errMsg | NO | int | 错误提示语 | 错误提示语，仅当 status===talkStatusErrURLGet 时才有
 
+#### Code:- TalkStatus
+| Code                    | Description
+| ----------------------- | -------
+| 0 | 未启动或未识别的状态
+| 1 | 进行对讲准备工作
+| 2 | 对讲已开始
+| 3 | 对讲已停止
+| 4 | 获取URL失败
+| 5 | 初始化对讲URL失败
+| 6 | 正在对讲不能再次开始
+| 7 | 发送音频数据失败
+| 8 | http请求超时
+| 9 | 域名或IP错误
+| 10 | http参数错误
+| 11 | 服务器数据解析异常
+| 12 | 设备回复“失败”，即表示设备端拒绝对讲或对讲初始化异常
+| 13 | 网络异常
+| 14 | 无麦克风权限
+
 #### JMRTMPPlayerManager Listener:- kOnStreamPlayerRecordStatus
 | Field                    | Must Exist | Type | Value | Description
 | ----------------------- | ------- | ------- | ------ | -------
 | status | YES | int | 1~7, "recordStatusStart": 开始录制; "recordStatusComplete": 录制完成; "recordStatusErrRecording": 正在录制；"recordStatusErrFail": 录制失败；"recordStatusErrSave": 保存失败；"recordStatusErrPath": 无效路径；"recordStatusErrAuthority": 无权限； | 录制状态
 | filePath | YES | string | 录制视频的保存路径
 
+#### Code:- RecordStatus
+| Code                    | Description
+| ----------------------- | -------
+| 0 | 未启动或未识别的状态
+| 1 | 开始录制
+| 2 | 录制完成
+| 3 | 正在录制
+| 4 | 录制失败
+| 5 | 保存失败
+| 6 | 无效路径
+| 7 | 无权限
 
 #### JMRTMPPlayerManager Listener:- kOnStreamPlayerReceiveFrameInfo
 | Field                    | Must Exist | Type | Value | Description
@@ -120,6 +169,16 @@ Podfile 增加
 | Field                    | Must Exist | Type | Value | Description
 | ----------------------- | ------- | ------- | ------ | -------
 | undefine | YES | undefine | null | 回复内容有设备端决定，一般是json字符串或字符串
+
+#### Code:- DeviceData
+| Code                    | Description
+| ----------------------- | -------
+| 0x3 | 设备端SDK信息
+| 0x5 | 响应客户端SDK释放请求
+| 0x10 | 在线人数信息
+| 0x108 | 单个回放文件结尾
+| 0x109 | 所有回放文件结束
+
 
 #### Demo示例
 [https://github.com//Eafy/react-native-rtmp-player-jm/tree/master/example/App.js](example/App.js)
