@@ -234,6 +234,7 @@ public class JMRTMPPlayerManager extends ReactContextBaseJavaModule {
                             bitmap.compress(Bitmap.CompressFormat.PNG, 100, fos);
                             fos.flush();
                             fos.close();
+                            promise.resolve(filePath);
                         } catch (Exception e) {
                             e.printStackTrace();
                             promise.reject("-3", "Err: Save image");
