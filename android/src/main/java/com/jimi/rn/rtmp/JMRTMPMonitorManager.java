@@ -1,5 +1,6 @@
 package com.jimi.rn.rtmp;
 
+import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.drawable.Animatable;
@@ -30,26 +31,17 @@ import com.facebook.react.uimanager.annotations.ReactProp;
 import com.jimi.jimivideoplayer.opengl.GLMonitor;
 
 public class JMRTMPMonitorManager extends SimpleViewManager<GLMonitor> {
-    private static GLMonitor glMonitor;
+    private static GLMonitor glMonitor = null;
     public static boolean isResume = false;
-    private DataSource<CloseableReference<CloseableImage>> dataSource;
-    private DraweeHolder<?> imageHolder;
+    private DataSource<CloseableReference<CloseableImage>> dataSource = null;
+    private static DraweeHolder<?> imageHolder = null;
 
     @Override
     public String getName() {
         return "JMRTMPMonitor";
     }
 
-    public static GLMonitor getGLMonitor(){
-        return glMonitor;
-    }
-
-    public static void removeGLMonitor() {
-        glMonitor = null;
-    }
-
-    @Override
-    protected GLMonitor createViewInstance(ThemedReactContext reactContext) {
+    public static GLMonitor getGLMonitor(Context reactContext){
         if (glMonitor == null) {
             glMonitor = new GLMonitor(reactContext);
 
@@ -61,6 +53,15 @@ public class JMRTMPMonitorManager extends SimpleViewManager<GLMonitor> {
             imageHolder.onAttach();
         }
         return glMonitor;
+    }
+
+    public static void removeGLMonitor() {
+        glMonitor = null;
+    }
+
+    @Override
+    protected GLMonitor createViewInstance(ThemedReactContext reactContext) {
+        return getGLMonitor(reactContext);
     }
 
     public static void setIsResume(boolean isResume) {

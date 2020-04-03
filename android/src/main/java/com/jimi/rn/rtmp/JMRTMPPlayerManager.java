@@ -118,7 +118,7 @@ public class JMRTMPPlayerManager extends ReactContextBaseJavaModule {
             return;
         }
 
-        glMonitor = JMRTMPMonitorManager.getGLMonitor();
+        glMonitor = JMRTMPMonitorManager.getGLMonitor(mContext);
         gJMVideoStreamPlayer = new JMVideoStreamPlayer(mContext, key, secret, imei, null, mListener);
         gJMVideoStreamPlayer.attachGlMonitor(glMonitor);
     }

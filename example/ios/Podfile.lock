@@ -6,7 +6,7 @@ PODS:
     - DoubleConversion
     - glog
   - glog (0.3.5)
-  - JimiVideoPlayer (1.4.1.1)
+  - JimiVideoPlayer (1.4.4)
   - React (0.58.6):
     - React/Core (= 0.58.6)
   - react-native-rtmp-player-jm (1.1.1):
@@ -95,7 +95,7 @@ SPEC CHECKSUMS:
   DoubleConversion: bb338842f62ab1d708ceb63ec3d999f0f3d98ecd
   Folly: de497beb10f102453a1afa9edbf8cf8a251890de
   glog: aefd1eb5dda2ab95ba0938556f34b98e2da3a60d
-  JimiVideoPlayer: 88bd54950474115e0abb441a0abbfdd849871a3b
+  JimiVideoPlayer: f4d5bb4941927e89d3f294279e02aaaa60b9550c
   React: 130b87b2d5e2baac646954282cab87be986d98fc
   react-native-rtmp-player-jm: a1270814640a16bfffee601d13531d2fd0773b91
   RNFS: c9bbde46b0d59619f8e7b735991c60e0f73d22c1

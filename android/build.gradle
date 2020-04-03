@@ -51,6 +51,6 @@ dependencies {
     compileOnly 'com.facebook.react:react-native:+'
     compileOnly files('src/main/assets')
 
-    api "com.jimi.jimivideoplayer:JimiVideoPlayer:1.4.2"
+    api "com.jimi.jimivideoplayer:JimiVideoPlayer:1.4.4"
 }
 
