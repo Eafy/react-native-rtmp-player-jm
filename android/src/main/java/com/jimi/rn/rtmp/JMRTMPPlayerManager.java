@@ -196,7 +196,7 @@ public class JMRTMPPlayerManager extends ReactContextBaseJavaModule {
             gJMVideoStreamPlayer.switchCamera(isFront, autoPlay, new JMSwitchCameraListener() {
                 @Override
                 public void onSwitchCameraHandler(boolean b, String s, long l, String s1) {
-                    if (b && l == 0 && !TextUtils.isEmpty(s)) {
+                    if (b && l == 0) {
                         promise.resolve(s);
                     } else {
                         promise.reject(String.valueOf(l), s1 != null ? s1 : "");

@@ -109,7 +109,7 @@ RCT_EXPORT_METHOD(stop) {
 
 RCT_EXPORT_METHOD(switchCamera:(BOOL)isFront autoPlay:(BOOL)bAuto resolver:(RCTPromiseResolveBlock)resolve rejecter:(RCTPromiseRejectBlock)reject) {
     [gJMVideoStreamPlayer switchCamera:isFront autoPlay:bAuto handler:^(BOOL success, NSString * _Nullable url, NSInteger code, NSString * _Nullable errMsg) {
-        if (success && code == 0 && url) {
+        if (success && code == 0) {
             resolve(url);
         } else {
             reject([NSString stringWithFormat:@"%ld", (long)code], errMsg ? errMsg : @"", nil);
