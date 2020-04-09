@@ -73,6 +73,7 @@ Podfile 增加
 | startTalk() | kOnStreamPlayerTalkStatus | 见回调说明 | 开始对讲，iOS会自动申请对讲权限，Android需要自己先申请权限
 | stopTalk() | kOnStreamPlayerTalkStatus | 见回调说明 | 停止对讲
 | stop() | null | null | 停止内部所有功能（播放、对讲，网络请求）
+| reStart() | null | null | 重启网关、Web服务
 | Promise switchCamera(bool isFront, bool bAuto, resolver, rejecter) | Promise | bAuto，默认请填true，成功返回url，否则错误码及错误信息，比如：{ [Error: 设备不在线] code: '228'} | 切换摄像头
 | Promise snapshot(String filePath) | Promise | 成功返回保存后的图片路径，否则错误码及错误信息，比如：{ [Error: Failed to do snapshot] code: '-1'} | 视频截图，filePath：需要保存图片的绝对路径，必须以".png"结尾，code:-1，截图失败，-2:保存图片失败，-3:格式无效
 | startRecording(String filePath) | kOnStreamPlayerRecordStatus | 见回调说明 | mp4视频录制，filePath：需要保存视频的绝对路径(iOS默认只录制在沙盒，必须以".mp4"结尾)
