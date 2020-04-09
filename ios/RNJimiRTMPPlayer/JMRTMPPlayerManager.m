@@ -104,7 +104,11 @@ RCT_EXPORT_METHOD(stopTalk) {
 }
 
 RCT_EXPORT_METHOD(stop) {
-    [gJMVideoStreamPlayer stopTalk];
+    [gJMVideoStreamPlayer stop];
+}
+
+RCT_EXPORT_METHOD(reStart) {
+    [gJMVideoStreamPlayer reStart];
 }
 
 RCT_EXPORT_METHOD(switchCamera:(BOOL)isFront autoPlay:(BOOL)bAuto resolver:(RCTPromiseResolveBlock)resolve rejecter:(RCTPromiseRejectBlock)reject) {

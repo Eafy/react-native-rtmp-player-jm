@@ -191,6 +191,13 @@ public class JMRTMPPlayerManager extends ReactContextBaseJavaModule {
     }
 
     @ReactMethod
+    public void reStart() {
+        if (gJMVideoStreamPlayer != null) {
+            gJMVideoStreamPlayer.reStart();
+        }
+    }
+
+    @ReactMethod
     public void switchCamera(Boolean isFront, boolean autoPlay, Promise promise) {
         if (gJMVideoStreamPlayer != null) {
             gJMVideoStreamPlayer.switchCamera(isFront, autoPlay, new JMSwitchCameraListener() {
