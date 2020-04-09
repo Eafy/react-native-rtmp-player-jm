@@ -98,12 +98,19 @@ export default class App extends Component<Props> {
                         <Text style={styles.baseStyle}>静音</Text>
                     </TouchableOpacity>
                 </View>
+
+                <View style={{ flexDirection: 'row', justifyContent: 'space-between', width: width, height: 40, marginTop: 10 }}>
+                    <TouchableOpacity style={styles.btn} onPress={() => { this.clickedSwitchCamera() }}>
+                        <Text style={styles.baseStyle}>切换摄像头</Text>
+                    </TouchableOpacity>
+                </View>
             </View>
         );
     }
 
     clickedInitSDK() {
-        JMRTMPPlayerManager.initialize("cd15d1aba85346128811ae17fc2a2378", "a7866ef45d594ea988554fe633fa987e", "983135884798102")
+//        JMRTMPPlayerManager.initialize("cd15d1aba85346128811ae17fc2a2378", "a7866ef45d594ea988554fe633fa987e", "983135884798102")
+        JMRTMPPlayerManager.initialize("69dcc204c82e4861a7a763c6bb3f4b96", "fcb0f7e8ec9e4ed89d632240f4e1b8b9", "357730090535536")
     }
 
     clickedReleaseSDK() {
@@ -160,7 +167,7 @@ export default class App extends Component<Props> {
     }
 
     clickedSwitchCamera() {
-        JMRTMPPlayerManager.switchCamera(false, false).then(data => {
+        JMRTMPPlayerManager.switchCamera(false, true).then(data => {
             console.log(data);
         }).catch(e => {
             console.log(e);

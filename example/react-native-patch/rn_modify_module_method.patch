@@ -1,0 +1,10 @@
+--- a/node_modules/react-native/React/Base/RCTModuleMethod.mm
++++ b/node_modules/react-native/React/Base/RCTModuleMethod.mm
+@@ -90,6 +90,7 @@
+
+ static BOOL RCTParseUnused(const char **input)
+ {
+   return RCTReadString(input, "__unused") ||
++         RCTReadString(input, "__attribute__((__unused__))") ||     //lzj fixed
+          RCTReadString(input, "__attribute__((unused))");
+ }

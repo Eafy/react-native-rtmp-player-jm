@@ -1,0 +1,12 @@
+--- a/Pods/ReSwift/ReSwift/CoreTypes/Store.swift
++++ b/Pods/ReSwift/ReSwift/CoreTypes/Store.swift
+@@ -86,9 +86,6 @@
+ 
+         subscriptions.append(subscriptionBox)
+ 
+-        if let state = self.state {
+-            originalSubscription.newValues(oldState: nil, newState: state)
+-        }
+     }
+ 
+     open func subscribe<S: StoreSubscriber>(_ subscriber: S)
