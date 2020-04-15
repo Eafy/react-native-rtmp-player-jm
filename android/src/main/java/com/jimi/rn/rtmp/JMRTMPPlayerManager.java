@@ -82,23 +82,17 @@ public class JMRTMPPlayerManager extends ReactContextBaseJavaModule {
     private final LifecycleEventListener mLifecycleEventListener = new LifecycleEventListener() {
         @Override
         public void onHostResume() {
-            JMRTMPMonitorManager.isResume = true;
-            if (glMonitor != null) {
-                glMonitor.onResume();
-            }
+            JMRTMPMonitorManager.setIsResume(true);
         }
 
         @Override
         public void onHostPause() {
-            JMRTMPMonitorManager.isResume = false;
-            if (glMonitor != null) {
-                glMonitor.onPause();
-            }
+            JMRTMPMonitorManager.setIsResume(false);
         }
 
         @Override
         public void onHostDestroy() {
-            JMRTMPMonitorManager.isResume = false;
+            JMRTMPMonitorManager.setIsResume(false);
             if (mContext != null && mBroadcastReceiver != null) {
                 mContext.unregisterReceiver(mBroadcastReceiver);
                 mBroadcastReceiver = null;
@@ -138,6 +132,7 @@ public class JMRTMPPlayerManager extends ReactContextBaseJavaModule {
     public void startPlayLive() {
         if (gJMVideoStreamPlayer != null) {
             gJMVideoStreamPlayer.startPlayLive();
+            JMRTMPMonitorManager.setIsResume(true);
         }
     }
 
@@ -145,6 +140,7 @@ public class JMRTMPPlayerManager extends ReactContextBaseJavaModule {
     public void startPlay(String url) {
         if (gJMVideoStreamPlayer != null) {
             gJMVideoStreamPlayer.startPlay(url);
+            JMRTMPMonitorManager.setIsResume(true);
         }
     }
 
@@ -159,6 +155,7 @@ public class JMRTMPPlayerManager extends ReactContextBaseJavaModule {
             }
 
             gJMVideoStreamPlayer.startPlayback(list);
+            JMRTMPMonitorManager.setIsResume(true);
         }
     }
 

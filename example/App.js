@@ -103,6 +103,12 @@ export default class App extends Component<Props> {
                     <TouchableOpacity style={styles.btn} onPress={() => { this.clickedSwitchCamera() }}>
                         <Text style={styles.baseStyle}>切换摄像头</Text>
                     </TouchableOpacity>
+                    <TouchableOpacity style={styles.btn} onPress={() => { this.clickedStopAll() }}>
+                        <Text style={styles.baseStyle}>Stop</Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity style={styles.btn} onPress={() => { this.clickedReStart() }}>
+                        <Text style={styles.baseStyle}>ReStart</Text>
+                    </TouchableOpacity>
                 </View>
             </View>
         );
@@ -182,6 +188,10 @@ export default class App extends Component<Props> {
         this.setState({ mute: !this.state.mute }, () => {
             JMRTMPPlayerManager.setMute(this.state.mute);
         });
+    }
+
+    clickedReStart() {
+        JMRTMPPlayerManager.reStart();
     }
 }
 
