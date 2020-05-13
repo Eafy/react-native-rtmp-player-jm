@@ -6,10 +6,10 @@ PODS:
     - DoubleConversion
     - glog
   - glog (0.3.5)
-  - JimiVideoPlayer (1.4.6)
+  - JimiVideoPlayer (1.4.9)
   - React (0.58.6):
     - React/Core (= 0.58.6)
-  - react-native-rtmp-player-jm (1.1.6):
+  - react-native-rtmp-player-jm (1.1.8):
     - JimiVideoPlayer
     - React
   - React/Core (0.58.6):
@@ -21,16 +21,22 @@ PODS:
     - React/jsiexecutor
   - React/cxxreact (0.58.6):
     - boost-for-react-native (= 1.63.0)
+    - DoubleConversion
     - Folly (= 2018.10.22.00)
+    - glog
     - React/jsinspector
   - React/DevSupport (0.58.6):
     - React/Core
     - React/RCTWebSocket
   - React/fishhook (0.58.6)
   - React/jsi (0.58.6):
+    - DoubleConversion
     - Folly (= 2018.10.22.00)
+    - glog
   - React/jsiexecutor (0.58.6):
+    - DoubleConversion
     - Folly (= 2018.10.22.00)
+    - glog
     - React/cxxreact
     - React/jsi
   - React/jsinspector (0.58.6)
@@ -95,12 +101,12 @@ SPEC CHECKSUMS:
   DoubleConversion: bb338842f62ab1d708ceb63ec3d999f0f3d98ecd
   Folly: de497beb10f102453a1afa9edbf8cf8a251890de
   glog: aefd1eb5dda2ab95ba0938556f34b98e2da3a60d
-  JimiVideoPlayer: 27df8af8a087307b724dae9321a413772e152d7a
-  React: 130b87b2d5e2baac646954282cab87be986d98fc
-  react-native-rtmp-player-jm: 299c9d9ad71fa431b6ec38dc51e41aed4c521633
+  JimiVideoPlayer: b81815d62c25be5eb9dbdc55fc8e8adf5bbf2900
+  React: f85504c211ebbb63cfa0512572e124b185a94de2
+  react-native-rtmp-player-jm: 1fde5854a6090d9a0a6adb96539e136a5febee51
   RNFS: c9bbde46b0d59619f8e7b735991c60e0f73d22c1
   yoga: 32d7ef1081951e9a35a4c72a7be797598b138a48
 
 PODFILE CHECKSUM: d3a51f5973489d00996ecef0a970b00c08d76b83
 
-COCOAPODS: 1.9.0
+COCOAPODS: 1.9.1

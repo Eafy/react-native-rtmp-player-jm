@@ -280,7 +280,8 @@ public class JMRTMPPlayerManager extends ReactContextBaseJavaModule {
     @ReactMethod
     public void getRecordingDuration(Promise promise) {
         if (gJMVideoStreamPlayer != null) {
-            promise.resolve(gJMVideoStreamPlayer.getRecordingRuration());
+            int duration = (int)gJMVideoStreamPlayer.getRecordingRuration();
+            promise.resolve(duration);
         } else {
             promise.resolve(0);
         }
