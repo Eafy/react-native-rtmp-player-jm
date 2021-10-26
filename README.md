@@ -54,7 +54,7 @@ Podfile 增加
     import { Platform, NativeModules, NativeEventEmitter } from 'react-native';
     import { JMRTMPMonitorView} from 'react-native-rtmp-player-jm';
     const { JMRTMPPlayerManager } = NativeModules;
-    
+
 
 #### JMRTMPMonitorView Props 属性
 | Prop                    | Type  | Default  | Description

@@ -6,7 +6,7 @@ android/local.properties
 .DS_Store
 .idea
 npm-debug.log
-example
+example/
 package-lock.json
 .git
 .gitignore

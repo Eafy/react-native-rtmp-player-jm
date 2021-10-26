@@ -9,6 +9,7 @@
   "dependencies": {
     "react": "16.6.3",
     "react-native": "0.58.6",
+    "react-native-f1-jm": "^1.0.4",
     "react-native-fs": "2.13.3",
     "react-native-rtmp-player-jm": "^1.1.9"
   },

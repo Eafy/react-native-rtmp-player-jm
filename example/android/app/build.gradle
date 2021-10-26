@@ -148,6 +148,7 @@ dependencies {
 
     implementation project(':react-native-fs')
     implementation project(':react-native-rtmp-player-jm')
+    implementation project(':react-native-f1-jm')
 }
 
 task copyDownloadableDepsToLibs(type: Copy) {

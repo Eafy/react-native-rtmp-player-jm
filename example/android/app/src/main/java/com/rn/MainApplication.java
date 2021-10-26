@@ -2,6 +2,7 @@ package com.rn;
 
 import android.app.Application;
 
+import com.facebook.react.BuildConfig;
 import com.facebook.react.ReactApplication;
 import com.jimi.rn.rtmp.JMRTMPPlayerPackage ;
 import com.facebook.react.ReactNativeHost;
@@ -9,7 +10,7 @@ import com.facebook.react.ReactPackage;
 import com.facebook.react.shell.MainReactPackage;
 import com.facebook.soloader.SoLoader;
 
-import com.jimi.rn.rtmp.JMRTMPPlayerPackage;
+import com.reactnative.f1.F1VideoPackage;
 import com.rnfs.RNFSPackage;
 
 import java.util.Arrays;
@@ -26,9 +27,10 @@ public class MainApplication extends Application implements ReactApplication {
     @Override
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
-          new MainReactPackage(),
-            new RNFSPackage(),
-              new JMRTMPPlayerPackage()
+              new MainReactPackage(),
+              new RNFSPackage(),
+              new JMRTMPPlayerPackage(),
+              new F1VideoPackage()
       );
     }
 
