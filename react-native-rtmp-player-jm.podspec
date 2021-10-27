@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "react-native-rtmp-player-jm"
-  s.version      = "1.2.1"
+  s.version      = "1.2.3"
   s.summary      = "Jimi RTMP Video Player SDK for React Native"
 
   s.description  = <<-DESC
