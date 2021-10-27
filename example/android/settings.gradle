@@ -2,10 +2,10 @@ rootProject.name = 'example'
 include ':react-native-rtmp-player-jm'
 project(':react-native-rtmp-player-jm').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-rtmp-player-jm/android')
 
-include ':react-native-fs'
-project(':react-native-fs').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-fs/android')
-
-include ':react-native-f1-jm'
-project(':react-native-f1-jm').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-f1-jm/android')
+//include ':react-native-fs'
+//project(':react-native-fs').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-fs/android')
+//
+//include ':react-native-f1-jm'
+//project(':react-native-f1-jm').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-f1-jm/android')
 
 include ':app'

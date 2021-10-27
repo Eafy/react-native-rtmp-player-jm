@@ -28,6 +28,9 @@ allprojects {
         maven {
             url "$rootDir/../node_modules/react-native/android"
         }
+        maven {
+            url 'http://172.26.10.101:8081/nexus/content/repositories/releases/'
+        }
     }
 }
 

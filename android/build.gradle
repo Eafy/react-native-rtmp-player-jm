@@ -21,6 +21,9 @@ repositories {
     maven {
         url '/usr/local/node/lib/node_modules/react-native/android'
     }
+    maven {
+        url 'http://172.26.10.101:8081/nexus/content/repositories/releases/'
+    }
 }
 
 android {
@@ -51,6 +54,6 @@ dependencies {
     compileOnly 'com.facebook.react:react-native:+'
     compileOnly files('src/main/assets')
 
-    api "com.jimi.android:JimiVideoPlayerSDK::+"
+    api "com.jimi.android:JimiVideoPlayerSDK:+"
 }
 
